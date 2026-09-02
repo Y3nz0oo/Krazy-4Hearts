@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino | Our Homepage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f9ff;
+            color: #183b68;
+        }
+
+        
+        nav {
+            height: 65px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2764b8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #31567f;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #1769d1;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 65px 20px 45px;
+            background: linear-gradient(to bottom, #ffffff, #edf6ff);
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #1764b5;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #607d9b;
+            font-size: 16px;
+        }
+
+        
+        .subject-header {
+            width: 85%;
+            margin: 35px auto;
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .subject-icon {
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            border-radius: 50%;
+            background: #e5f1ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+        }
+
+        .subject-header h2 {
+            margin-top: 15px;
+            font-size: 30px;
+            color: #2168b5;
+        }
+
+        .subject-header p {
+            margin-top: 10px;
+            color: #657b94;
+        }
+
+        
+        .about {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .about h2 {
+            text-align: center;
+            color: #1764b5;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            line-height: 1.7;
+            color: #4e647d;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        
+        .section-title {
+            text-align: center;
+            color: #1764b5;
+            margin: 45px 0 25px;
+        }
+
+        .cards {
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+        }
+
+        .card-icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #2168b5;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #657b94;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        
+        .problems {
+            width: 85%;
+            margin: 50px auto;
+        }
+
+        .problem-box {
+            background: white;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-left: 5px solid #2674c9;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+
+        .problem-box h3 {
+            color: #2168b5;
+            margin-bottom: 8px;
+        }
+
+        .problem-box p {
+            color: #596f88;
+            line-height: 1.6;
+        }
+
+        
+        .quote {
+            width: 85%;
+            margin: 50px auto;
+            background: #e7f3ff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .quote p {
+            font-size: 20px;
+            font-style: italic;
+            color: #245c91;
+            line-height: 1.6;
+        }
+
+        
+        footer {
+            margin-top: 60px;
+            background: #1260ae;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <div class="logo">✦ Krazy FourHearts</div>
+
+        <div class="nav-links">
+            <a href="index.html" href="index.html">Home</a>
+            <a href="#filipino">Subjects</a>
+        </div>
+    </nav>
+
+
+    
+    <section class="hero" id="home">
+        <h1>FILIPINO</h1>
+        <p>Wika, Kultura, Panitikan, at Pagkakakilanlan </p>
+    </section>
+
+
+    
+    <section class="subject-header" id="filipino">
+
+        <div class="subject-icon">📖</div>
+
+        <h2>FILIPINO</h2>
+
+        <p>
+            Pag-aaral ng wikang Filipino, panitikan, kultura,
+            at mga pagpapahalagang humuhubog sa ating pagkakakilanlan.
+        </p>
+
+    </section>
+
+
+    
+    <section class="about">
+
+        <h2>ABOUT FILIPINO</h2>
+
+        <p>
+            Ang Filipino ay isang mahalagang asignatura na naglalayong
+            linangin ang kakayahan ng mga mag-aaral sa paggamit ng wika
+            at pag-unawa sa panitikan. Sa pamamagitan nito, mas napapalalim
+            ang pagpapahalaga natin sa ating kultura, kasaysayan,
+            tradisyon, at pagkakakilanlan bilang Pilipino.
+        </p>
+
+    </section>
+
+
+    
+    <h2 class="section-title">TALASALITAAAN</h2>
+
+    <section class="cards">
+
+        <div class="card">
+            <div class="card-icon">📝</div>
+            <h3>Wika</h3>
+            <p>
+                Pag-aaral ng wastong paggamit ng wikang Filipino,
+                gramatika, komunikasyon, at pagpapahayag.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Panitikan</h3>
+            <p>
+                Pagkilala at pagsusuri sa mga akdang pampanitikan
+                tulad ng nobela, tula, dula, at sanaysay.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+            </div>
+            <h3>Kultura</h3>
+            <p>
+                Pagpapahalaga sa tradisyon, kaugalian, sining,
+                at iba pang bahagi ng kulturang Pilipino.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📖</div>
+            <h3>El Filibusterismo</h3>
+            <p>
+                Pagsusuri sa mga tauhan, simbolismo, tema,
+                at suliraning panlipunan sa nobela ni Jose Rizal.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">✍️</div>
+            <h3>Pagsulat</h3>
+            <p>
+                Paglinang ng kakayahan sa pagsulat ng sanaysay,
+                repleksyon, talumpati, at iba pang akda.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎭</div>
+            <h3>Pagpapahayag</h3>
+            <p>
+                Pagsasanay sa malinaw at malikhaing pagpapahayag
+                ng sariling ideya, damdamin, at pananaw.
+            </p>
+        </div>
+
+    </section>
+
+
+    
+
+    <section class="about">
+
+        <h2>ANO NG BA ANG EL FILIBUSTERISMO?</h2>
+
+        <p>
+            Ang El Filibusterismo ni José Rizal ay isang nobelang nagpapakita ng iba’t ibang suliraning panlipunan noong panahon ng kolonyalismong Espanyol. Sa nobela, makikita ang pang-aabuso sa kapangyarihan, katiwalian, kawalan ng katarungan, diskriminasyon, at suliranin sa edukasyon. Ayon sa National Historical Commission of the Philippines (NHCP), ang nobela ay naglantad sa kolonyal na pang-aapi sa mga Pilipino (National Historical Commission of the Philippines [NHCP], n.d.).
+        </p>
+
+    <section class="problems">
+
+        <h2 class="section-title">
+            MGA SULIRANING PANLIPUNAN SA PANITIKAN
+        </h2>
+
+        <div class="problem-box">
+            <h3>📌 Diskriminasyon</h3>
+            <p>
+                Ipinapakita sa ilang akdang pampanitikan ang hindi
+                pantay na pagtrato sa mga tao dahil sa kanilang
+                kalagayan, kasarian, o katayuan sa lipunan.
+            </p>
+        </div>
+
+        <div class="problem-box">
+            <h3>📌 Kahirapan</h3>
+            <p>
+                Maraming akda ang tumatalakay sa kahirapan at sa
+                mga hamong kinakaharap ng mga ordinaryong Pilipino.
+            </p>
+        </div>
+
+        <div class="problem-box">
+            <h3>📌 Pang-aabuso sa Kapangyarihan</h3>
+            <p>
+                Ginagamit ng ilang akda ang kuwento upang ipakita
+                ang epekto ng maling paggamit ng kapangyarihan
+                at kawalan ng katarungan.
+            </p>
+        </div>
+
+        <div class="problem-box">
+            <h3>📌 Pagkawala ng Pagkakakilanlan</h3>
+            <p>
+                Sa pag-unlad ng teknolohiya at globalisasyon,
+                mahalagang mapanatili ang pagpapahalaga sa sariling
+                wika, kultura, at identidad.
+            </p>
+        </div>
+
+    </section>
+
+
+    
+    <section class="quote">
+
+        <p>
+            “Ang wika ay salamin ng kultura at pagkakakilanlan
+            ng isang bayan.”
+        </p>
+
+    </section>
+
+
+    
+    <footer>
+        © 2026 Krazy FourHearts | Filipino
+    </footer>
+
+</body>
+</html>
